@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 # ---------------- Load data ----------------
-OUT_DIR = "change_seed"        
+OUT_DIR = "optuna_plot"        
 
 df = pd.read_csv(f"{OUT_DIR}/all_trials.csv")
 X = df[['params_latent', 'params_beta']].values
