@@ -97,3 +97,5 @@ Depending on the script, outputs may include:
 - interactive HTML visualizations of the MF design space
 
 ## Visualisation of output
+
+![heatmap](CVAE_MFs/optuna_plot/tpe_ratio_heatmap.png)
