@@ -27,8 +27,8 @@ The dataset loader expects .dat files with the following structure:
 
 - Lines 0–39: 40 × 40 binary image (True / False)
 - Lines 40–42: local Minkowski Functionals
-- Line 43: global Minkowski Functionals
-- Line 44: sigma values
+- Line 43: global Minkowski Functionals (mean of local MFs)
+- Line 44: sigma values (standard deviation of local MFs)
 
 Each sample is loaded as:
 
@@ -36,6 +36,10 @@ Each sample is loaded as:
 - local MF values
 - global MF values
 - sigma values
+
+## Dataset
+The dataset used in this project is derived from the RockMicro Minkowski database developed by Sijmen Zwarts:
+https://github.com/sfzwarts/RockMicro_Minkowski/tree/main/Data
 
 ## Model
 
@@ -56,10 +60,26 @@ The training setup in this repository uses:
 - batch normalization
 - BCE-based reconstruction learning with KL regularization
 
+## Dependencies
+This project uses the following libraries:
+- torch
+- numpy
+- matplotlib
+- scikit-image
+- scipy
+- scikit-learn
+- optuna 
+- pandas
+- seaborn
+- plotly
+- pyvista
+
+pip install torch numpy matplotlib scikit-image scipy scikit-learn optuna pandas seaborn plotly pyvista
+
 ## How to use
 1. Prepare the dataset
 Unzip the dataset archives so that the expected folders are available.
-2. Train the model with Optuna: Run python BO.py
+2. Train the model with Optuna: Run python BO.py (Hyperparameter tuning is performed using [Optuna](https://github.com/optuna/optuna) [Optuna](https://optuna.org).)
 3. Visualize Optuna results: Run python optuna_plot.py
 4. Run inverse-design boundary exploration. After training, place the selected checkpoint at: exploratory_3D/model_best.pth.Then run: python inverse_design_octree.py
 
@@ -75,3 +95,5 @@ Depending on the script, outputs may include:
 - Optuna study database / summary
 - inverse-design boundary figures
 - interactive HTML visualizations of the MF design space
+
+## Visualisation of output
