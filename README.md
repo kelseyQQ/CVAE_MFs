@@ -48,7 +48,7 @@ Each sample is loaded as:
 
 ## Dataset
 The dataset used in this project is derived from the RockMicro Minkowski database developed by Sijmen Zwarts:
-https://github.com/sfzwarts/RockMicro_Minkowski/tree/main/Data
+https://github.com/sfzwarts/RockMicro_Minkowskis
 
 ## Model
 
@@ -98,7 +98,7 @@ Unzip the dataset archives so that the expected folders are available.
    ```bash
    python BO.py
    ```
-   (Hyperparameter tuning is performed using [Optuna](https://github.com/optuna/optuna) [Optuna](https://optuna.org).)
+   (Hyperparameter tuning is performed using [Optuna](https://github.com/optuna/optuna).)
 3. Visualize the Optuna results
    Run:
    ```bash
