@@ -37,7 +37,7 @@ The dataset loader expects `.dat` files with the following structure:
 - Lines 0–39: 40 × 40 binary image (True / False)
 - Lines 40–42: local Minkowski Functionals
 - Line 43: global Minkowski Functionals (mean of local MFs)
-- Line 44: sigma values, representing the standard deviations of the local Minkowski Functionals (M0, M1, M2). These describe the variability of morphology descriptors within each parent sample.
+- Line 44: sigma values, representing the standard deviations of the global Minkowski Functionals (M0, M1, M2). These describe the variability of morphology descriptors within each parent sample.
 
 Each sample is loaded as:
 
