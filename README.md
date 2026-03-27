@@ -125,10 +125,7 @@ Depending on the script, outputs may include:
 
 ## Output Visualization
 <p align="center">
-  <img src="optuna_plot/tpe_ratio_heatmap.png" alt="heatmap" width="500"><br>
+  <img src="figure.png" alt="heatmap" width="500"><br>
   <em>Figure 1. TPE ratio heatmap from Optuna, showing promising regions in the hyperparameter space.</em>
 </p>
-<p align="center">
-  <img src="octree_pointcloud/preview_thr_0.25_and_0.5.png" alt="heatmap" width="500"><br>
-  <em>Figure 2. Octree-based estimate of the feasible region in Minkowski functional space. </em>
-</p>
+
