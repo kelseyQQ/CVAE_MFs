@@ -124,8 +124,8 @@ Depending on the script, outputs may include:
 - interactive HTML visualizations of the MF design space
 
 ## Output Visualization
-<!-- <p align="center">
+<p align="center">
   <img src="figure.png" alt="heatmap" width="500"><br>
   <em>Figure 1. TPE ratio heatmap from Optuna, showing promising regions in the hyperparameter space.</em>
-</p> -->
+</p>
 
